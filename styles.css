@@ -71,6 +71,10 @@ main {
 #navbar ul li {
     border-bottom: 1px solid black;
     list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
     padding: 15px 0 15px 20px;
 }
 
