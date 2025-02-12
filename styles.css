@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+a:not(#reference a) {
+    text-decoration: none;
+    color: #5d5d5d;
+}
+
+p,
+ul,
+code {
+    color: #5d5d5d;
+    font-size: .9rem;
+}
+
+ul li {
+    padding: 5px;
+}
+
+code {
+    padding: 20px;
+    display: block;
+    border-radius: 5px;
+    background-color: #ededed;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    height: 100vh;
+    width: 22vw;
+    border-right: 3px solid #4d4d4d;
+    overflow-y: scroll;
+}
+
+main {
+    margin: 0 0 0 22vw;
+    padding: 3rem;
+}
+
+/* navbar */
+
+#navbar header {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    background: white;
+    width: inherit;
+    border-right: 3px solid #4d4d4d;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    border-bottom: 1px solid black;
+    list-style: none;
+    padding: 15px 0 15px 20px;
+}
+
+#navbar ul li:first-of-type {
+    border-top: 1px solid black;
+    margin-top: 4.5rem;
+}
+
+#navbar ul li:hover {
+    background-color: #ededed;
+}
+
+/* main */
+
+#main-doc header {
+    font-size: 1.5rem;
+    margin: 0 0 1rem -1.5rem;
+}
+
+section:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+/* media query */
+@media (max-width: 1024px) {
+    html {
+        font-size: small;
+    }
+}
+
+@media (max-width:769px) {
+    html {
+        font-size: 10px;
+    }
+
+    #navbar ul li:first-of-type {
+        margin-top: 7.5rem;
+    }
+}
